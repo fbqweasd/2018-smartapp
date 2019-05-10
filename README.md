@@ -1,15 +1,13 @@
 # 핀 배열
 
+![smart_bb](/img/smart_bb.png)
+
 A0 : 습도 센서 
 
 
 2 : motor_1
 
-3 : motor_1
-
-4 : motor_a
-
-5 : motor_b
+3 : motor_2
 
 8 : LED_R 
 

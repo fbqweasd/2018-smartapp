@@ -32,13 +32,24 @@ void loop() {
   if( water_data > 300 ){ // 촉촉함 
     digitalWrite(motor_1,LOW); //모터 정지
     digitalWrite(motor_2,HIGH);
+
+    digitalWrite(LED_R,LOW); // 초록색 LED on
+    digitalWrite(LED_G,HIGH);
+    digitalWrite(LED_B,LOW);
   }
   else if (water_data > 700){ // 경고
     digitalWrite(motor_1,LOW); // 모터 정지
     digitalWrite(motor_2,HIGH);
-  }
+  
+    digitalWrite(LED_R,HIGH); // 노란색 LED on
+    digitalWrite(LED_G,HIGH);
+    digitalWrite(LED_B,LOW);}
   else{ // 물 필요함
     digitalWrite(motor_1,HIGH); //모터 활성화
     digitalWrite(motor_2,LOW);
+    
+    digitalWrite(LED_R,LOW); //빨간 LED on
+    digitalWrite(LED_G,HIGH);
+    digitalWrite(LED_B,LOW);
   }
 }

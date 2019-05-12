@@ -25,4 +25,5 @@ void loop() {
    Serial.print("조도 : ");
    Serial.println(cds_data);
    Serial.println();
+   delay(100);
 }

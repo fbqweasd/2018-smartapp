@@ -18,4 +18,5 @@ void loop() {
 
    Serial.print("습도 : ");
    Serial.println(water_data);
+   delay(100);
 }

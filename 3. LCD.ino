@@ -44,7 +44,7 @@ void loop() {
     digitalWrite(LED_B,LOW);
 
     lcd.clear();
-    lcd.print("촉촉해염");
+    lcd.print("wet");
   }
   else if (water_data > 700){ // 경고
     digitalWrite(motor_1,LOW); // 모터 정지
@@ -55,7 +55,7 @@ void loop() {
     digitalWrite(LED_B,LOW);
     
     lcd.clear();
-    lcd.print("곧 물이 드갈거임 물통 체크하셈");
+    lcd.print("warning");
   }
   else{ // 물 필요함
     digitalWrite(motor_1,HIGH); //모터 활성화
@@ -66,6 +66,6 @@ void loop() {
     digitalWrite(LED_B,LOW);
 
     lcd.clear();
-    lcd.print("물 필요함!@#$&*");
+    lcd.print("!@#$&*");
   }
 }

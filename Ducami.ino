@@ -47,31 +47,31 @@ void loop() {
   }
 
   switch(c){
-    case 'A': // LED on 
+    case '1': // LED on 
       digitalWrite(LED_R,HIGH); // LED on
       digitalWrite(LED_G,HIGH);
       digitalWrite(LED_B,HIGH);
       break;
     
-    case 'B': // LED off
+    case '2': // LED off
       digitalWrite(LED_R,LOW); // LED off
       digitalWrite(LED_G,LOW);
       digitalWrite(LED_B,LOW);
       break;
 
-    case 'C': // auto on
+    case '5': // auto on
       auto_mode = 1;
       break;
 
-    case 'D': // auto off 
+    case '6': // auto off 
       auto_mode = 0;
       break;
 
-    case 'E':
+    case '3':
       motor_on();
       break;
 
-    case 'F':
+    case '4':
       motor_off();
       break;
 
